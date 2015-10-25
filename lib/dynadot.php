@@ -17,6 +17,7 @@ class Dynadot{
 	}
 	public function search($domains){
 		$i = 0;
+		$params="";
 		foreach($domains as $data){
 			$params .= "&domain".$i."=".$data['domain'];
 			$params .= (isset($data['language']) ?  "&language".$i."=".$data['language'] : '');
